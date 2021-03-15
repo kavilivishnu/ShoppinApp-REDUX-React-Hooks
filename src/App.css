@@ -2,37 +2,96 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  max-width: 100%;
+  background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.backdrop {
+  background-color: rgba(63, 61, 61, 0.692);
+  height: 100%;
+  position: fixed;
+  transition: all 1.3s;
+  width: 100%;
+}
+
+.font-style {
+  font-family: 'Sansita Swashed';
+}
+
+.heading-h3 {
+  font-family: 'Asap';
+}
+
+h1 {
+  font-family: 'Overlock';
+}
+
+.heading-h3 {
+  font-family: 'Asap';
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.heading-h4 {
+  font-family: 'Overlock';
+  font-size: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: 'Architects Daughter';
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color:rgb(235, 102, 102);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(105, 102, 102);
+  margin-right: 16px;
+}
+
+button:active {
+  background-color: #22b1b1;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+@media all and (max-width: 768px) {
+  .heading-h3 {
+    font-size: 15px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  button {
+    padding: 9px 12px;
+    margin-bottom: 20px;
+    margin-left: 6.5px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .modal {
+    width: 90%;
+    height: 45%;
+  }
+
+  .heading-h4 {
+    font-size: 12px;
+  }
+
+  .base-heading {
+    font-size: 22px;
+  }
+  
+}
+
+@media all and (min-width:411px) {
+  button {
+    margin-left: 7px;
   }
 }
